@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pokédex</h1>
+        <input type="text" id="search-input" placeholder="Buscar Pokémon por nombre...">
+        <div id="pokemon-container" class="pokemon-container"></div>
+    </div>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span id="close-modal" class="close">&times;</span>
+            <h2 id="pokemon-name"></h2>
+            <img id="pokemon-image" src="" alt="Pokemon Image">
+            <p><strong>Base Experience:</strong> <span id="pokemon-experience"></span></p>
+            <p><strong>Abilities:</strong> <span id="pokemon-abilities"></span></p>
+            <p><strong>Game Indices:</strong> <span id="pokemon-game-indices"></span></p>
+            <audio id="pokemon-sound" controls>
+                <source id="sound-source" src="" type="audio/ogg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

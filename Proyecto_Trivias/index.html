@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRIVIAS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>TRIVIAS</h1>
+        <div class="config">
+            <label for="difficulty">Dificultad:</label>
+            <select id="difficulty">
+                <option value="easy">Fácil</option>
+                <option value="medium">Media</option>
+                <option value="hard">Difícil</option>
+            </select>
+            <label for="type">Tipo de Respuesta:</label>
+            <select id="type">
+                <option value="multiple">Múltiple</option>
+                <option value="boolean">Verdadero/Falso</option>
+            </select>
+            <label for="category">Categoría:</label>
+            <select id="category">
+                <option value="9">General Knowledge</option>
+                <option value="11">Entertainment: Film</option>
+                <option value="17">Science & Nature</option>
+                <!-- Añade más categorías según sea necesario -->
+            </select>
+            <button id="generateTrivia">Crear Trivia</button>
+        </div>
+        <div id="triviaContainer" class="hidden">
+            <div id="questions"></div>
+            <button id="submitAnswers" class="hidden">Enviar Respuestas</button>
+        </div>
+        <div id="scoreContainer" class="hidden">
+            <h2 id="score"></h2>
+            <button id="newTrivia">Nueva Trivia</button>
+        </div>
+    </div>
+    <script src="style.css"></script>
+</body>
+</html>
